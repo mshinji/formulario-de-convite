@@ -1,0 +1,6 @@
+@import url(global.css);
+
+
+body {
+  font-family: var(--leckerli-one);
+}
