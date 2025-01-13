@@ -1,6 +1,6 @@
 @import url(global.css);
-
+@import url(layout.css);
 
 body {
-  font-family: var(--leckerli-one);
+  background-color: var(--shape-background);
 }

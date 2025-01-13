@@ -1,0 +1,40 @@
+#app {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-columns: 37.75% 62.25%;
+}
+
+aside {
+
+  display: flex;
+  margin: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 45.5rem;
+  background-image: url(../assets/images/Background.png);
+  border-radius: 0.75rem;
+  position: fixed;
+  & header {
+
+    margin: 30px;
+
+    & img {
+      width: 2.84375rem;
+      height: 3rem;
+    }
+ 
+    & h1 {
+      margin-top: 1rem ;
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    & p {
+      font: var(--body-md);
+      color: var(--text-heading);
+      font-weight: 300 ;
+    }
+  }
+}

@@ -12,14 +12,14 @@
   --baloo-2: 'Baloo 2', sans-serif;
 
   /* typography */
---logo: regular 2.5rem/auto var(--leckerli-one);
+--logo: 400 2.5rem/1.5 var(--leckerli-one);
 
---heading-md: bold 1.75rem/auto var(--baloo-2);
---heading-sm: bold 1.125rem/auto var(--baloo-2);
+--heading-md: bold 1.75rem/1.5 var(--baloo-2);
+--heading-sm: bold 1.125rem/1.5 var(--baloo-2);
 
---body-md: regular 1rem/auto var(--open-sans);
---body-sm: regular 0.875rem/auto var(--open-sans);
---body-xs: regular 0.75rem/auto var(--open-sans);
+--body-md: 400 1rem/1.5 var(--open-sans);
+--body-sm: 400 0.875rem/1.5 var(--open-sans);
+--body-xs: 400 0.75rem/1.5 var(--open-sans);
 
 /* colors */
 --brand-light: #59B2FF;
