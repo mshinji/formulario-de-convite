@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div class="app">
+  <div id="app">
     <aside>
       <header>
         <img src="/assets/icons/Logo.svg" alt="">
@@ -28,7 +28,193 @@
       </header>
     </aside>
     <main>
-    </main>
+      <div class="main-container">
+        <h2>Crie o seu convite</h2>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="about-event">
+            <div class="flex">
+              <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-calendar">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+              </svg>
+              <legend>
+                Sobre o evento</legend>
+            </div>
+            <div class="input-wrapper">
+              <label for="event-title">Título</label> <br>
+              <input type="text" id="event-title" name="event-title" placeholder="Nome do evento">
+            </div>
+            <div class="radio-container">
+              <div class="input-wrapper">
+                <label for="event-date-start">Início <br>
+                  <input type="datetime-local" id="event-date-start" name="event-date-start"
+                    placeholder="Nome do evento">
+              </div>
+              <div class="input-wrapper">
+                <label for="event-date-end">Fim</label> <br>
+                <input type="datetime-local" id="event-date-end" name="event-date-end">
+              </div>
+              <div>
+                <label>Tipo</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-building-2">
+                      <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                      <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                      <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                      <path d="M10 6h4" />
+                      <path d="M10 10h4" />
+                      <path d="M10 14h4" />
+                      <path d="M10 18h4" />
+                    </svg>
+                    <label for="event-type">
+                      Presencial</label>
+
+                    <input type="radio" id="event-type" name="event-type" value="in-person">
+                  </div>
+                  <div class="radio-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-video">
+                      <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                      <rect x="2" y="6" width="14" height="12" rx="2" />
+                    </svg>
+                    <label for="event-type">
+                      Online</label>
+                    <input type="radio" id="event-type" name="event-type" value="online">
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="event-adress">Local</label>
+                <input type="text" id="event-adress" name="event-adress" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="text-wrapper">
+              <label for="event-description">Descrição</label> <br>
+              <textarea name="event-description" id="event-description"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="customize">
+            <legend for="customize">Personalização</legend>
+            <label for="color-picker-wrapper">Cor Principal</label>
+            <div class="color-picker-container">
+              <div class="color-picker-wrapper brand-light">
+                <input type="checkbox" name="blue" class="blue">
+              </div>
+              <div class="color-picker-wrapper purple">
+                <input type="checkbox" name="purple" class="purple">
+              </div>
+              <div class="color-picker-wrapper fuschia">
+                <input type="checkbox" name="fuschia" class="fuschia">
+              </div>
+              <div class="color-picker-wrapper pink">
+                <input type="checkbox" name="pink" class="pink">
+              </div>
+              <div class="color-picker-wrapper danger">
+                <input type="checkbox" name="danger" class="danger">
+              </div>
+              <div class="color-picker-wrapper orange">
+                <input type="checkbox" name="orange" class="orange">
+              </div>
+              <div class="color-picker-wrapper yellow">
+                <input type="checkbox" name="yellow" class="yellow">
+              </div>
+              <div class="color-picker-wrapper lime">
+                <input type="checkbox" name="lime" class="lime">
+              </div>
+              <div class="color-picker-wrapper green">
+                <input type="checkbox" name="green" class="green">
+              </div>
+              <div class="color-picker-wrapper cyan">
+                <input type="checkbox" name="cyan" class="cyan">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="event-theme">
+            <label for="event-theme">Tema do evento</legend>
+              <div class="event-container">
+                <div class="event-wrapper">
+                  <img src="/assets/images/aniversario.png" alt="">
+                  <label for="aniversário">Aniversário</label>
+                  <input type="checkbox" name="aniversario" id="aniversario">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/infantil.png" alt="">
+                  <label for="aniversário">Infaltil</label>
+                  <input type="checkbox" name="infantil" id="infantil">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/formatura.png" alt="">
+                  <label for="aniversário">Formatura</label>
+                  <input type="checkbox" name="formatura" id="formatura">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/casamento.png" alt="">
+                  <label for="aniversário">Casamento</label>
+                  <input type="checkbox" name="casamento" id="casamento">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/cha-de-bebe.png" alt="">
+                  <label for="aniversário">Chá de bebê</label>
+                  <input type="checkbox" name="cha-de-bebe" id="cha-de-bebe">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/cha-de-panela.png" alt="">
+                  <label for="aniversário">Chá de panela</label>
+                  <input type="checkbox" name="cha-de-panela" id="cha-de-panela">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/carnaval.png" alt="">
+                  <label for="aniversário">Carnaval</label>
+                  <input type="checkbox" name="carnaval" id="carnaval">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/pascoa.png" alt="">
+                  <label for="aniversário">Páscoa</label>
+                  <input type="checkbox" name="pascoa" id="pascoa">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/sao-joao.png" alt="">
+                  <label for="aniversário">São João</label>
+                  <input type="checkbox" name="sao-joao" id="sao-joao">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/halloween.png" alt="">
+                  <label for="aniversário">Halloween</label>
+                  <input type="checkbox" name="halloween" id="halloween">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/natal.png" alt="">
+                  <label for="aniversário">Natal</label>
+                  <input type="checkbox" name="natal" id="natal">
+                </div>
+                <div class="event-wrapper">
+                  <img src="/assets/images/outro.png" alt="">
+                  <label for="aniversário">Outro</label>
+                  <input type="checkbox" name="outro" id="outro">
+                </div>
+              </div>
+              <div class="alt-container">
+                .
+              </div>
+      </div>
+      </fieldset>
+  </div>
+  </form>
+  </div>
+  </main>
   </div>
 </body>
 
